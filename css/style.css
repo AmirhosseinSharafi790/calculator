@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000c4;
+    user-select: none;
+}
+.caculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: #00000047;
+    padding: 30px;
+    box-shadow: rgb(80, 79, 79) 0px 50px 100px -20px, rgba(82, 82, 82, 0.951) 0px 30px 60px -30px,
+    rgb(119, 120, 120) 0px -2px 6px 0px inset;
+}
+.DEL{
+    text-align: center;
+}
+input:not(.text){
+    border: 0;
+    width: 70px;
+    width: 70px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    box-shadow: rgba(41, 40, 40, 0.05) 3px 0px 0px 2px, rgb(0, 0, 0) 0.5px 0px 2px 1px inset;
+}
+input:hover:not(.text , .oprator){
+    background-color: #00000074;
+    color: red;
+    transition: all 0.2s ease-in;
+}
+.oprator{
+    color: red;
+}
+.oprator:hover{
+    background-color: red;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+.text , #p-Error{
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    padding: 0 30px 0 0;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 40px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(96, 96, 97, 0.08) 0px 0px 0px 1px;
+}
+#p-Error{
+    text-align: center;
+}
+.text:focus{
+    outline: 0;
+}
+#equal , #division{
+    width: 150px;
+    border-radius: 50px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.btn-theme{
+    text-align: center;
+    margin: 0 5px 10px 5px;
+}
+.btn-theme button{
+    padding: 20px;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+}
+.btn-black{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+}
+.btn-black:hover , .btn-white:hover{
+    cursor: pointer;
+
+}
+#clock{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+span{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+}

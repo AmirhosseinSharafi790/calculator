@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="caculator">
+        <div class="output">
+            <p id="clock"></p>
+            <div class="btn-theme">
+                <button class="btn-black bi bi-moon-fill " id="btn-black"></button>
+                <button class="btn-white bi bi-brightness-high-fill" id="btn-white"></button>
+            </div>
+            <input type="text" class="text" placeholder="0" tabindex="0">
+        </div>
+        <div>
+            <input type="button" value="AC" class="oprator AC" id="division">
+            <input type="button" value="DEL" class="oprator DEL">
+            <input type="button" value="/" class="oprator val" >
+        </div>
+        <div>
+            <input type="button" value="7" class="val">
+            <input type="button" value="8" class="val">
+            <input type="button" value="9" class="val">
+            <input type="button" value="*" class="oprator val">
+        </div>
+        <div>
+            <input type="button" value="4" class="val">
+            <input type="button" value="5" class="val">
+            <input type="button" value="6" class="val">
+            <input type="button" value="+" class="oprator val">
+        </div>
+        <div>
+            <input type="button" value="1" class="val">
+            <input type="button" value="2" class="val">
+            <input type="button" value="3" class="val">
+            <input type="button" value="-" class="oprator val">
+        </div>
+        <div>
+            <input type="button" value="0" class="val">
+            <input type="button" value="." class="oprator val">
+            <input type="button" value="=" class="equal oprator" id="equal">
+        </div>
+        <div>
+            <span class="bi bi-c-circle"> : AmirHossein Sharafi</span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
